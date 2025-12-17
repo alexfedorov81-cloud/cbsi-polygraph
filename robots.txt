@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /static/admin/
+Disallow: /media/
+
+Host: https://полиграф-54.рф
+Sitemap: https://полиграф-54.рф/sitemap.xml

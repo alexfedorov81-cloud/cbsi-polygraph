@@ -1,0 +1,66 @@
+<footer class="footer">
+    <div class="container">
+        <div class="text-center">
+            <!-- Название и описание -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-accent mb-3">ЦВСИ</h3>
+                <p class="text-light-secondary max-w-2xl mx-auto">
+                    Сибирский центр выявления скрываемой информации.<br>
+                    Профессиональные полиграфологические исследования в Новосибирске и по всей России.
+                </p>
+            </div>
+
+            <!-- Соцсети -->
+            <div class="mb-8">
+                <h4 class="font-bold text-light mb-4">Мы в соцсетях</h4>
+                <div class="flex justify-center space-x-6">
+                    {% if settings and settings.vk_link %}
+                    <a href="{{ settings.vk_link }}"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-light-secondary hover:text-accent transition text-2xl"
+                       title="Мы ВКонтакте">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    {% endif %}
+                    {% if settings and settings.telegram_link %}
+                    <a href="{{ settings.telegram_link }}"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-light-secondary hover:text-accent transition text-2xl"
+                       title="Наш Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Кнопка наверх -->
+            <div class="mb-8">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="btn btn-outline text-sm py-2 px-6"
+                        aria-label="Вернуться наверх">
+                    <i class="fas fa-arrow-up mr-2"></i>Наверх
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-documents pt-6 pb-8 border-t border-gray-700">
+    <div class="container">
+        <div class="max-w-md mx-auto text-center">
+            <!-- Политика конфиденциальности -->
+            <p class="mb-4">
+                <a href="/privacy-policy/" class="font-bold text-light hover:text-accent transition text-lg">
+                    Политика конфиденциальности
+                </a>
+            </p>
+
+            <!-- Копирайт -->
+            <p class="text-sm text-gray-400">
+                © {% now "Y" %} ЦВСИ. Все права защищены.
+            </p>
+        </div>
+    </div>
+</footer>

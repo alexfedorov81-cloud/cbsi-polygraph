@@ -1,0 +1,41 @@
+# Виртуальные среды Python (новые правила)
+venv/
+.venv/
+env/
+ENV/
+*.venv/
+env.bak/
+venv.bak/
+
+*.sqlite3
+*.db
+create_admin.py
+.idea/
+__pycache__/
+*.pyc
+get_chat_id.py
+# Конфиденциальные данные
+*.key
+*.pem
+db.sqlite3
+.env
+secrets.py
+
+# SSL сертификаты
+/etc/letsencrypt/
+
+# Django
+cbsi_site/settings.py
+cbsi_site/settings.py.backup
+*.local.py
+
+# Socket files
+*.sock
+
+# System configs
+/etc/nginx/
+/etc/systemd/system/
+/etc/systemd/system/gunicorn.service
+
+#Другие секреты
+contacts/telegram_bot1.py

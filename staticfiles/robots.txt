@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /static/admin/
-Disallow: /media/
-
-Sitemap: http://cbsi.ru/sitemap.xml
